@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agila De Bayani - Gallery</title>
+  <style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #9fc2da; /* Updated to match other pages */
+      color: #4e6068; /* Updated to match other pages */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+        background-color: #634949;
+        color: #f5f4f4;
+        padding: 15px 20px 0 20px;
+        text-align: center;
+    }
+
+    .brand-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .brand-logo {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 2px solid #d10c0c;
+        object-fit: cover;
+    }
+
+    .brand-name {
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    nav {
+        background-color: #525050;
+        margin: 0 -20px;
+        padding: 10px 0 0 0;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    nav ul li a {
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    nav ul li a:hover {
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 4px;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 6px 12px 10px 12px;
+        display: inline-block;
+        position: relative;
+    }
+
+    nav a.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+        border-radius: 2px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: #91def5;
+      width: 100%;
+      max-width: 720px;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .card h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #38423b;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .tagline {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: #627267;
+      margin-bottom: 30px;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px 12px;
+        justify-items: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .gallery-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 105px;             
+      height: 105px;            
+      border-radius: 50%;
+      border: 3px solid #d1b15a; 
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.08);
+    }
+
+    .item-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #38423b;
+      margin-top: 10px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    footer {
+        background-color: #1a1a1a;
+        color: #aaaaaa;
+        text-align: center;
+        padding: 15px 20px;
+        font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-header">
+      <img src="Logo.png" alt="Logo" class="brand-logo">
+      <span class="brand-name">AGILA DE BAYANI</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="gallery.html" class="active">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+  <main>
+    <div class="card">
+      <h1>OUR GALLERY COLLECTION</h1>
+      <p class="tagline">EXPLORE OUR TRAVEL & CREATIVE MEMORIES</p>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="Picture4.jpeg" alt="Spain">
+          <p class="item-label">PROJECT 01</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Picture5.jpeg" alt="South Korea">
+          <p class="item-label">PROJECT 02</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Picture6.jpeg" alt="Iceland">
+          <p class="item-label">PROJECT 03</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Picture7.png" alt="Spain Photo 2">
+          <p class="item-label">PROJECT 04</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Picture8.jpeg" alt="Austria">
+          <p class="item-label">PROJECT 05</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Picture9.jpeg" alt="UAE">
+          <p class="item-label">PROJECT 06</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Picture10.jpeg" alt="Switzerland">
+          <p class="item-label">PROJECT 07</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Picture11.jpeg" alt="China Wall">
+          <p class="item-label">PROJECT 08</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Picture12.jpeg" alt="Japan">
+          <p class="item-label">PROJECT 09</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Picture13.jpeg" alt="Paris France">
+          <p class="item-label">PROJECT 10</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Picture14.jpeg" alt="Rome">
+          <p class="item-label">PROJECT 11</p>
+        </div>
+        <div class="gallery-item">
+          <img src="Picture15.jpeg" alt="Creator Photo">
+          <p class="item-label">PROJECT 12</p>
+        </div>
+      </div>
+    </div> 
+  </main>
+
+  <footer>
+    <p>&copy; Agila De Bayani</p>
+  </footer>
+
+</body>
+</html>
